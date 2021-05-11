@@ -1,11 +1,6 @@
 import React from 'react'
-import styled from 'styled-components';
+import { Img } from '../../globalStyles';
 
-const Img = styled.img`
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-`
 
 const UnsplashImage = ({ url, key, alt }) => {
   return (

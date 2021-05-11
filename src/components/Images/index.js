@@ -3,17 +3,9 @@ import axios from 'axios';
 import Heading from './Heading';
 import Loader from './Loader';
 import UnsplashImage from './UnsplashImage';
-import styled from 'styled-components';
 import InfiniteScroll from 'react-infinite-scroll-component';
+import { WrapperImage } from './image.styles';
 
-const WrapperImage = styled.section`
-  max-width: 70rem;
-  margin: 4rem auto;
-  display: grid;
-  grid-gap: 1em;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-auto-rows: 300px;
-`
 const Index = () => {
   const [images, setImages] = useState([]);
 
@@ -31,7 +23,7 @@ const Index = () => {
   }
 
   return (
-    <div>
+    <>
       <Heading/>
       <InfiniteScroll
         dataLength={images.length}
@@ -45,7 +37,7 @@ const Index = () => {
         ))}
         </WrapperImage>
       </InfiniteScroll>
-    </div>
+    </>
   )
 }
 
