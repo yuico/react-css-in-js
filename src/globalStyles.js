@@ -5,7 +5,10 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  body {
+    font-family: 'Source Sans Pro', sans-serif; 
   }
 `
 
@@ -24,5 +27,15 @@ export const Container = styled.div`
   }
 `
 
+export const Header = styled.header`
+  max-width: 70rem;
+  margin: 2rem auto;
+  text-align: center
+`
+
+export const H1 = styled.h1`
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 15px;
+`
 
 export default GlobalStyle;

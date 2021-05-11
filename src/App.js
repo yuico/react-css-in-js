@@ -1,15 +1,18 @@
-import Unsplash from 'unsplash-js';
 import GlobalStyle from './globalStyles'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { NavBar } from './components';
-
-const unsplash = new Unsplash({ accessKey: 'VqNilJJuCMn6_7VeftXI4VJXdVMqDvnFfeMG4PcCt1U' });
+import Home from './pages/Home'
+import Images from './pages/Images'
 
 function App() {
   return (
     <Router>
       <GlobalStyle/>
       <NavBar/>
+      <Switch>
+        <Route path='/' exact component={Home} />
+        <Route path='/images' exact component={Images} />
+      </Switch>
     </Router>
   );
 }
