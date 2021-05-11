@@ -1,4 +1,4 @@
-# React with styled-components and Unsplash API
+# React with styled-components
 
 - React, Styled-components, Hooks
 - api: https://unsplash.com/
